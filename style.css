@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Rubik+Distressed&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-image: url(img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    font-size: 39px;
+    
+    font-family: 'Rubik Distressed', cursive;
+}
+#highScoreBox{
+
+}
+#board{
+    background: linear-gradient(rgb(146, 227, 146),rgb(243, 243, 114));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+
+.head{
+   
+    background:linear-gradient(red,rgb(4, 119, 226));
+    border: .25vmin solid rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+
+.food{
+    background-color: rgba(245, 198, 7, 0.605);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.snake{
+    background:linear-gradient(red,purple);
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
